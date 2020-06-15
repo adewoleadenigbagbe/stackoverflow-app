@@ -1,0 +1,22 @@
+{
+  "server_config": {
+    "host": "localhost",
+    "localPort": 3490,
+    "protocol": "http"
+  },
+  "db_config": {
+    "host": "localhost",
+    "port": 27017,
+    "dbName": "stackoverflowDB"
+  },
+  "app_config": {
+    "appversion": "v1"
+  },
+  "web_token_info": {
+    "secret": "heimxydall",
+    "expiresIn": 86400
+  },
+  "crypto_info": {
+    "salt_round": 8
+  }
+}

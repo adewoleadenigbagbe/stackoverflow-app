@@ -1,0 +1,47 @@
+{
+  "name": "stackoverflow-app",
+  "version": "1.0.0",
+  "description": "A simple prototype of stackflow app",
+  "main": "server.js",
+  "private": true,
+  "author": {
+    "email": "wolecharles@gmail.com",
+    "name": "Adenigbagbe Adewole",
+    "url": "https://github.com/wolechacho"
+  },
+  "keyword": [
+    "Node js",
+    "Express Js",
+    "Javascript",
+    "stackoveflow"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wolechacho/stackoverflow-app"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --timeout 10000 --exit"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.11"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.18.11"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  }
+}

@@ -1,4 +1,5 @@
-#Introduction
+# Introduction
+
 The API is focused on miniature prototype of stackoverflow application .It focuses on the below features
 
 - User signup
@@ -8,13 +9,16 @@ The API is focused on miniature prototype of stackoverflow application .It focus
 - Answer Question
 - Search (Questions, Answers and Users)
 
-#Overview
+# Overview
+
 The Application was built using node.js as the backend framework and mongoDb as the database.
 
-#Authentication
+# Authentication
+
 The Authentication service used is json web token (jwt)
 
-Error Codes
+# Error Codes
+
 The Error codes for the application are highlighted below
 
 - 200 (Ok)

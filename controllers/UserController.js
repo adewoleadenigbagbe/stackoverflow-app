@@ -69,7 +69,7 @@ class UserController {
         if (decodedUser === null) {
             return res.status(200).send({ user: null, message: "No User Information. Please do sign up" });
         }
-        if(decodedUser.email !== req.body.email){
+        if (decodedUser.email !== req.body.email) {
             return res.status(401).send({ user: null, message: "User Info not found" });
         }
         return res.status(200).send({ user: { email: decodedUser.email, username: decodedUser.username }, message: "User Info Retrieved" });
@@ -84,8 +84,8 @@ class UserController {
         //search user
         try {
             let searchResult = await searchUser(req.query.username);
-            if(searchResult === null){
-                return res.status(200).send({ message: "Users Information retrived successfully", user: null })
+            if (searchResult.length === 0) {
+                return res.status(200).send({ message: "No user found", user: [] })
             }
             return res.status(200).send({ message: "Users Information retrived successfully", user: searchResult })
         }

@@ -27,3 +27,7 @@ The Error codes for the application are highlighted below
 - 403 (Forbidden)
 - 400 (Bad Request)
 - 500 (Internal server Error)
+
+# Postman Collection Link
+
+You can find the api collection at this link https://www.getpostman.com/collections/56b07453bb20578b4ec3

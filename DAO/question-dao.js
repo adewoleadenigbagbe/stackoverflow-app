@@ -34,23 +34,15 @@ function appendAnswer(questionId, answer) {
 }
 
 //upvote a question
-function upvoteQuestion(questionId) {
-    Question.findByIdAndUpdate({ _id: questionId }, { $inc: { upvote: 1 } }, (err, doc) => {
-        if (err) {
-            throw err;
-        }
-        return doc;
-    });
+async function upvoteQuestion(questionId) {
+    let docQuery = await Question.findByIdAndUpdate({ _id: questionId }, { $inc: { upvote: 1 } }).exec();
+    return docQuery;
 }
 
 //upvote a question
-function downvoteQuestion(questionId) {
-    Question.findByIdAndUpdate({ _id: questionId }, { $inc: { downvote: 1 } }, (err, doc) => {
-        if (err) {
-            throw err;
-        }
-        return doc;
-    });
+async function downvoteQuestion(questionId) {
+    let docQuery = await Question.findByIdAndUpdate({ _id: questionId }, { $inc: { downvote: 1 } }).exec();
+    return docQuery;
 }
 
 //Get all Question

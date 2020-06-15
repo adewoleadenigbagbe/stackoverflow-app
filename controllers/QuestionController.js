@@ -64,7 +64,7 @@ class QuestionController {
 
         //increment the upvote
         try {
-            let result = upvoteQuestion(req.body.questionId);
+            let result = await upvoteQuestion(req.body.questionId);
             if (result === null) {
                 return res.status(200).send({ message: "Question to be upvoted not found" });
             }
@@ -85,7 +85,7 @@ class QuestionController {
 
         //increment the downvote
         try {
-            let result = downvoteQuestion(req.body.questionId);
+            let result = await downvoteQuestion(req.body.questionId);
             if (result === null) {
                 return res.status(200).send({ message: "Question to be downvoted not found" });
             }
